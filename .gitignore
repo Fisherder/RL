@@ -1,0 +1,80 @@
+# Repository-local git state backups
+.nested-git-backups/
+
+# Local assistant/session artifacts
+.codex
+.codex/
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs and generated run outputs
+*.log
+logs/
+swanlog/
+wandb/
+runs/
+outputs/
+eval_results/
+
+# Top-level scratch / legacy local data
+/dataset_*.jsonl
+/ppt_*.md
+
+# Large model/checkpoint artifacts
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.pth
+*.onnx
+
+# PurpCode generated artifacts
+/purpcode/models/
+/purpcode/logs/
+/purpcode/eval_results/
+/purpcode/outputs/
+
+# Pentest-R1 generated/model artifacts
+/Pentest-R1/DeepSeek-R1-0528-Qwen3-8B/
+/Pentest-R1/model/
+/Pentest-R1/outputs/
+/Pentest-R1/logs/
+/Pentest-R1/swanlog/
+/Pentest-R1/unsloth_compiled_cache/
+/Pentest-R1/grpo_trainer_lora_model/
+/Pentest-R1/grpo_trainer_lora_model_0123/
+/Pentest-R1/data/results/
+
+# Large vendored CTF assets. Keep task metadata/code in git; store assets externally.
+/Pentest-R1/train_ctf_env/task_assets/
+
+# AutoPenBench generated files
+/auto-pen-bench-official/benchmark/machines/kali/tmp_script/
+/auto-pen-bench-official/scripts/
+
+# Do not publish private key material. Keep local copies outside git.
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
