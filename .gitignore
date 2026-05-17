@@ -13,6 +13,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
+/unsloth_compiled_cache/
 
 # Virtual environments
 .venv/
@@ -71,6 +72,10 @@ eval_results/
 *.pfx
 id_rsa
 id_ed25519
+
+# Local proxy helpers and node selectors are machine-specific.
+/setup_mihomo_proxy.sh
+/switch_mihomo_node.py
 
 # OS/editor files
 .DS_Store
